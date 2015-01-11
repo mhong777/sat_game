@@ -1,0 +1,13 @@
+{
+  "name": "IonicTest",
+  "version": "0.0.0",
+  "dependencies": {
+    "ionic": "v1.0.0-beta.13",
+    "socket.io-client": "~1.2.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.17",
+    "angular-scenario": "~1.2.17"
+  }
+}
+
