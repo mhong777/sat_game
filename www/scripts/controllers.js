@@ -8,7 +8,14 @@ angular.module('IonicTest.controllers', [])
 .controller('DashCtrl', ['$scope', 'socket', function($scope, socket) {
     $scope.socketTest=function(){
         socket.emit('test msg', 'test message');
+        socket.emit('getAllQuestions');
+        
     };
+    
+    socket.on('allQuestions', function(input){
+        console.log(input); 
+    });
+    
     
     socket.on('test back', function(input){
         console.log(input); 
